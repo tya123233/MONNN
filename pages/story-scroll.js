@@ -292,30 +292,30 @@ const StoryScrollPage = () => {
 
   return (
     <div ref={mainRef} className={styles.container}>
-      <audio ref={beginSoundRef} src="/Voice/begin1.mp3" preload="metadata" playsInline />
+      <audio ref={beginSoundRef} src="/voice/begin1.mp3" preload="metadata" playsInline />
       <div className={styles.heroSection}>
         <GhostedTitle />
         <Section1Title />
       </div>
       <div ref={textSectionRef} className={styles.textSection}>
-        <audio ref={speak1SoundRef} src="/Voice/speak1.mp3" preload="metadata" playsInline />
+        <audio ref={speak1SoundRef} src="/voice/speak1.mp3" preload="metadata" playsInline />
         <TypewriterText text={storyText} />
       </div>
       <section ref={townRef} id="town" className={`${styles.section} ${styles.town} ${styles.firstSection}`}>
         <img src="/images/townlogo.png" alt="Town Logo" className={styles.townLogoOverlay} />
       </section>
       <section ref={walkingNightRef} id="walkingnight" className={`${styles.section} ${styles.walkingNight}`}>
-        <audio ref={grassSoundRef} src="/Voice/grass.mp3" preload="metadata" playsInline />
+        <audio ref={grassSoundRef} src="/voice/grass.mp3" preload="metadata" playsInline />
       </section>
       <section ref={boy2Ref} id="boy2" className={`${styles.section} ${styles.boy2}`}></section>
       <section ref={skyRef} id="sky" className={`${styles.section} ${styles.sky}`}>
-        <audio ref={starsSoundRef} src="/Voice/stars.mp3" preload="metadata" playsInline />
+        <audio ref={starsSoundRef} src="/voice/stars.mp3" preload="metadata" playsInline />
       </section>
       <section ref={eyeRef} id="eye" className={`${styles.section} ${styles.eye}`}></section>
       <div className={styles.section2TitleContainer}>
         <Section2Title />
-        <audio ref={speak2SoundRef} src="/Voice/speak2.mp3" preload="metadata" playsInline />
-        <audio ref={dabitSoundRef} src="/Voice/david.mp3" preload="metadata" playsInline />
+        <audio ref={speak2SoundRef} src="/voice/speak2.mp3" preload="metadata" playsInline />
+        <audio ref={dabitSoundRef} src="/voice/david.mp3" preload="metadata" playsInline />
       </div>
       <div ref={textSection2Ref} className={styles.textSection}>
         <TypewriterText text={storyText2} speed={106} />
